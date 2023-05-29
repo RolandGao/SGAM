@@ -2,6 +2,9 @@
 # Authored by Yuan Shen, Wei-Chiu Ma and Shenlong Wang
 # University of Illinois at Urbana-Champaign and Massachusetts Institute of Technology
 
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+
 import random
 from data.utils.utils import *
 from sgam.inference_pipeline import InfiniteSceneGeneration
